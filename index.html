@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MUM'S KITCHEN</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="The stop for the tastiest food and their recipes">
+	<meta name="keywords" content="food, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="img/favicon.png" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="test.css"/>
+
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="header-top">
+			<div class="container">
+
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<a href="index.html" class="site-logo">
+					<img src="img/logo.png" alt="" height=100px>
+				</a>
+				<div class="nav-switch">
+					<i class="fa fa-bars"></i>
+				</div>
+				<ul class="main-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="recipes.html">Recipes</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Hero section -->
+	<section class="hero-section">
+		<div class="hero-slider owl-carousel">
+			<div class="hero-slide-item set-bg" data-setbg="img/slider-bg-1.jpg">
+				<div class="hs-text">
+					<h2 class="hs-title-1"><span>Healthy & Tasty Recipes</span></h2>
+					<h2 class="hs-title-2"><span>right from the kitchen</span></h2>
+					<h2 class="hs-title-3"><span>for all the foodies</span></h2>
+				</div>
+			</div>
+			<div class="hero-slide-item set-bg" data-setbg="img/slider-bg-2.jpg">
+				<div class="hs-text">
+					<h2 class="hs-title-1"><span>Healthy & Tasty Recipes</span></h2>
+					<h2 class="hs-title-2"><span>right from the kitchen</span></h2>
+					<h2 class="hs-title-3"><span>for all the foodies</span></h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+	<section>
+		<div class="container">
+			<div class="section-title">
+				<h2>Recipe Of The Day</h2>
+			</div>
+			<img id="image" src="img/recipes/4.jpg" width="400" >
+
+			<script>
+			var day= new Date().getMinutes();
+			var im;
+			if (day % 2 == 0) {
+		    im = "img/recipes/4.jpg";
+		  } else {
+		    im = "img/recipes/2.jpeg";
+		  }
+
+			document.getElementById("image").src = im;
+			</script>
+
+		</div>
+	</section>
+	<!-- Recipes section -->
+	<section class="recipes-section spad pt-0">
+		<div class="container">
+			<div class="section-title">
+				<h2>Latest recipes</h2>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="recipe">
+						<img src="img/recipes/pizza.jpeg" alt="" height=350px width=350px>
+						<div class="recipe-info-warp">
+							<div class="recipe-info">
+								<h3>Tandoori Pizza</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-md-6">
+					<div class="recipe">
+						<img src="img/recipes/panipuri.jpeg" alt="" height=350px width=350px>
+						<div class="recipe-info-warp">
+							<div class="recipe-info">
+								<h3>Pani Puri</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="recipe">
+						<img src="img/recipes/cup.jpeg" alt="" height=350px width=350px>
+						<div class="recipe-info-warp">
+							<div class="recipe-info">
+								<a href="cup.html"><h3>Quick Cupcakes</h3></a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Recipes section end -->
+
+	<!-- Gallery section -->
+	<div class="gallery">
+		<div class="gallery-slider owl-carousel">
+			<div class="gs-item set-bg" data-setbg="img/instagram/1.jpeg"></div>
+			<div class="gs-item set-bg" data-setbg="img/instagram/2.jpeg"></div>
+			<div class="gs-item set-bg" data-setbg="img/instagram/3.jpeg"></div>
+			<div class="gs-item set-bg" data-setbg="img/instagram/4.jpeg"></div>
+			<div class="gs-item set-bg" data-setbg="img/instagram/5.jpeg"></div>
+			<div class="gs-item set-bg" data-setbg="img/instagram/6.jpeg"></div>
+		</div>
+	</div>
+	<!-- Gallery section end -->
+
+
+	<!-- Footer section  -->
+	<footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="footer-social">
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

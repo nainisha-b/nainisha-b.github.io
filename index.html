@@ -82,13 +82,24 @@
 			<img id="image" src="img/recipes/4.jpg" width="400" >
 
 			<script>
-			var day= new Date().getMinutes();
+			var day= new Date().getDay();
 			var im;
-			if (day % 2 == 0) {
-		    im = "img/recipes/4.jpg";
-		  } else {
-		    im = "img/recipes/2.jpeg";
-		  }
+			if (day == 0) {
+		    im = "img/recipes/ravioli.jpeg";
+		  } else if(day==1){
+		    im = "img/recipes/falafel.jpeg";
+		  } else if(day==2){
+		    im = "img/recipes/besan.jpeg";
+		  } else if(day==3){
+		    im = "img/recipes/amch.jpeg";
+		  } else if(day==4){
+		    im = "img/recipes/oats.jpeg";
+		  } else if(day==5){
+		    im = "img/recipes/kul.jpeg";
+		  } else{
+		    im = "img/recipes/kachori.jpeg";
+		  } 
+		
 
 			document.getElementById("image").src = im;
 			</script>

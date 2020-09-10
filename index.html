@@ -19,7 +19,64 @@
 	<link rel="stylesheet" href="css/animate.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="test.css"/>
-
+	    <style>
+      body {
+        margin: 0;
+      }
+      .wrapper {
+        display: flex;
+        height: 20vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .button {
+        border: 1px transparent;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 20px;
+        padding: 8px 30px;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 20px;
+        -webkit-animation: glowing 1300ms infinite;
+        -moz-animation: glowing 1300ms infinite;
+        -o-animation: glowing 1300ms infinite;
+        animation: glowing 1300ms infinite;
+      }
+      @-webkit-keyframes glowing {
+        0% {
+          background-color: #c322e3;
+          -webkit-box-shadow: 0 0 3px #c322e3;
+        }
+        50% {
+          background-color: #d375e6;
+          -webkit-box-shadow: 0 0 15px #d375e6;
+        }
+        100% {
+          background-color: #c322e3;
+          -webkit-box-shadow: 0 0 3px #c322e3;
+        }
+      }
+      @keyframes glowing {
+        0% {
+          background-color: #c322e3;
+          box-shadow: 0 0 3px #c322e3;
+        }
+        50% {
+          background-color: #d375e6;
+          box-shadow: 0 0 15px #d375e6;
+        }
+        100% {
+          background-color: #c322e3;
+          box-shadow: 0 0 3px #c322e3;
+        }
+      }
+     }
+    </style>
 
 </head>
 <body>
@@ -79,7 +136,11 @@
 			<div class="section-title">
 				<h2>Recipe Of The Day</h2>
 			</div>
-			<img id="image" src="img/recipes/paan.jpg" height=350px width=350px >
+			<table style="width:100%">
+  <tr>
+    <th>
+  
+			<img id="image" src="img/recipes/paan.jpg" height=350px width=350px ></th>
 
 			<script>
 			var day= new Date().getDay();
@@ -103,6 +164,53 @@
 
 			document.getElementById("image").src = im;
 			</script>
+			<th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCheck out the recipe now...<br><br>
+			<h2 id="demo"><center>   Oatmeal Cookies</center></h2><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="button" href="oats.html" id="refer">Try It Now!</a>
+			</th>
+
+			<script>
+			var day= new Date().getDay();
+			if (day == 0) {
+		    document.getElementById("demo").innerHTML = "Spinach and Ricotta Ravioli";
+		  } else if(day==1){
+		    document.getElementById("demo").innerHTML = "Falafel";
+		  } else if(day==2){
+		    document.getElementById("demo").innerHTML = "Besan Ke Laddoo";
+		  } else if(day==3){
+		    document.getElementById("demo").innerHTML = "American Chopsuey";
+		  } else if(day==4){
+		    document.getElementById("demo").innerHTML = "Oatmeal Cookies";
+		  } else if(day==5){
+		    document.getElementById("demo").innerHTML = "Paneer Tikka Masala and Kulcha";
+		  } else{
+		    document.getElementById("demo").innerHTML = "Khasta Kachori";
+		  }
+</script>
+<script>
+			var day= new Date().getDay();
+			var im;
+			if (day == 0) {
+		    im = "rav.html";
+		  } else if(day==1){
+		    im = "falafel.html";
+		  } else if(day==2){
+		    im = "besan ladoo.html";
+		  } else if(day==3){
+		    im = "amchop.html";
+		  } else if(day==4){
+		    im = "oats.html";
+		  } else if(day==5){
+		    im = "kulcha.html";
+		  } else{
+		    im = "kahori.html";
+		  } 
+		
+
+			document.getElementById("refer").href = im;
+			</script>
+			</tr>
+</table>
 
 		</div>
 	</section>
